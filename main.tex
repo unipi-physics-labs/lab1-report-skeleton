@@ -1,0 +1,106 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Misure di Densit\`a}
+\author{Nome Cognome (matricola)\quad
+        Nome Cognome (matricola)}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\section{Scopo dell'Esperienza}
+In questa esperienza di laboratorio misuriamo la densit\`a di alcuni oggetti attraverso misure dirette della massa e delle dimensioni degli oggetti.
+
+\section{Cenni Teorici}
+La densit\`a \`e definita come \ldots.
+
+\section{Materiali Utilizzati}
+L'esperienza consiste nella misura di masse e volumi di un certo numero di solidi di diverse forme: cilindri, parallelepipedi, sfere e prismi a base esagonale. Per le misure dirette ci siamo serviti di:
+\begin{itemize}
+    \item calibro ventesimale, risoluzione di \ldots;
+    \item calibro cinquantesimale, risoluzione di \ldots;
+    \item calibro Palmer, risoluzione di \ldots;
+    \item bilancia di precisione, risoluzione \ldots.
+\end{itemize}
+\section{Misure Dirette}
+Prima di iniziare a prendere le misure, abbiamo verificato con il calibro che i solidi fossero regolari entro la precisione degli strumenti di misura. In particolare abbiamo misurato lati e raggi in diversi punti e confermato che le misure fossero identiche.
+Abbiamo misurato la massa di ogni pesetto con la bilancia di precisione, e le dimensioni utili a calcolare il volume con il calibro ventesimale o Palmer, assegnando la risoluzione dello strumento come incertezza. I risultati delle misure dirette sono riportati nelle tabelle~\ref{tab:dir_cilindri} per i cilindri,~\ref{tab:dir_paralle} per i parallelepipedi, \ldots.
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{c|c|c}
+      $m\pm \sigma_m$ (g)   & $d\pm\sigma_d$ (mm)  & $h\pm\sigma_h$ (mm)\\
+      \hline
+     $\ldots \pm \ldots$    & $\ldots \pm \ldots$ &$\ldots \pm \ldots$\\
+    \end{tabular}
+    \caption{Misure dirette dei pesetti a forma di cilindro, dove $h$ \`e l'altezza e $d$ \`e il diametro di base.}
+    \label{tab:dir_cilindri}
+\end{table}
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{c|c|c|c}
+      $m\pm \sigma_m$ (g)   & $a\pm\sigma_a$ (mm)  & $b\pm\sigma_b$ (mm)& $c\pm\sigma_c$ (mm)\\
+      \hline
+       $\ldots \pm \ldots$  & $\ldots \pm \ldots$ & $\ldots \pm \ldots$ & $\ldots \pm \ldots$\\
+    \end{tabular}
+    \caption{Misure dirette dei pesetti a forma di parallelepipedo, dove $a$, $b$, e $c$ sono i tre lati.}
+    \label{tab:dir_paralle}
+\end{table}
+
+
+\section{Analisi Dati}
+\subsection{Calcolo dei Volumi}
+Per i solidi a forma di cilindro, abbiamo usato la seguente formula per calcolare il volume a partire dalle misure dirette riportate in tabella~\ref{tab:dir_cilindri}.
+\begin{equation}
+    V_c = \ldots
+\end{equation}
+Assumendo le misure dirette indipendenti, abbiamo calcolato l'incertezza sul volume sommando in quadrature gli errori relativi:
+\begin{equation}
+    \sigma_{V_c} = \ldots
+\end{equation}
+
+Per i solidi a forma di \ldots
+
+\subsection{Fit alla densit\`a}
+
+Prima di effettuare il fit abbiamo costruito il grafico di dispersione di $(m,V)$, riportato in figura~\ref{fig:dispersione},
+per individuare i pesetti della stessa densit\`a, ovvero quelli che si dispongono sulla stessa retta.
+
+\begin{figure}
+    \centering
+     \includegraphics[width=0.5\linewidth]{stupid.png}
+    \caption{Grafico di dispersione $(m,V)$.}
+    \label{fig:dispersione}
+\end{figure}
+
+Abbiamo poi formato \ldots gruppi di pesetti, costruito il grafico di dispersione per ognuno ed effettuato il fit dei minimi quadrati con la funzione:
+\begin{equation}
+    y = \alpha x + \beta
+\end{equation}
+
+In figura~\ref{fig:density1} \`e riportato il primo fit, i valori di best fit risultano:
+\begin{equation}
+    \alpha_1 = (\ldots \pm \ldots)\ \rm [unita'\ di\ misura]
+    \end{equation}
+    \begin{equation}
+        \beta_1 = (\ldots \pm \ldots)\ \rm [unita'\ di\ misura]
+\end{equation}
+La densit\`a risulta quindi pari a $(\ldots\pm\ldots)\ \rm kg/m^3$ compatibile/incompatibile con \ldots.
+
+\begin{figure}
+    \centering
+     \includegraphics[width=0.5\linewidth]{stupid.png}
+    \caption{Grafico di dispersione $(m,V)$, best fit per il primo gruppo di pesetti e grafico dei residui.}
+    \label{fig:density1}
+\end{figure}
+
+In figura \ldots  \`e riportato il secondo fit, i valori di best fit risultano \ldots
+
+\subsection{Verifica della Legge di Potenze per le sfere}
+
+
+\section{Conclusioni}
+
+\end{document}
