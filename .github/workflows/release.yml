@@ -29,7 +29,7 @@ jobs:
         run: |
           mkdir -p artifacts
           # Copy discovered PDFs into artifacts/
-          find . -maxdepth 1 -type f -name '*.pdf' \
+          find . -maxdepth 1 -type f -name 'main.pdf' \
             -not -path './artifacts/*' \
             -print -exec cp -t artifacts {} +
           echo "Collected files:"
@@ -40,7 +40,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: pdfs-${{ github.ref_name }}
-          path: artifacts/*.pdf
+          path: artifacts/main.pdf
           if-no-files-found: error
 
       # --- Create/Update GitHub Release on tag pushes ---
@@ -54,10 +54,10 @@ jobs:
           # Create release if not existing; otherwise upload assets
           if ! gh release view "$tag" >/dev/null 2>&1; then
             echo "Creating release $tag"
-            gh release create "$tag" artifacts/*.pdf \
+            gh release create "$tag" artifacts/main.pdf \
               --title "$tag" \
               --notes "Automated release for $tag"
           else
             echo "Release $tag exists, uploading assets"
-            gh release upload "$tag" artifacts/*.pdf --clobber
+            gh release upload "$tag" artifacts/main.pdf --clobber
           fi
