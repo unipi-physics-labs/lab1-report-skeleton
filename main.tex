@@ -1,11 +1,11 @@
-\documentclass{article}
+\documentclass[a4paper]{article}
 \usepackage{graphicx} % Required for inserting images
 
 \title{Misure di Densit\`a}
 \author{Nome Cognome (matricola)\quad
         \vspace{3mm}
         Nome Cognome (matricola)\\
-         gruppo A1-1\quad tavolo X}
+         gruppo A1-1\quad tavolo N}
 \date{\today}
 
 \begin{document}
@@ -27,9 +27,10 @@ L'esperienza consiste nella misura di masse e volumi di un certo numero di solid
 \end{itemize}
 
 \section{Misure Dirette}
-Prima di iniziare a prendere le misure, abbiamo verificato \ldots %con il calibro che i solidi fossero regolari entro la precisione degli strumenti di misura. In particolare abbiamo misurato lati e raggi in diversi punti e confermato che le misure fossero identiche.
 
-Abbiamo misurato la massa di ogni pesetto con la bilancia di precisione, e le dimensioni utili a calcolare il volume con il calibro ventesimale/cinquantesimale/Palmer, assegnando \ldots come incertezza. I risultati delle misure dirette sono riportati in tabella~\ref{tab:dir_cilindri} per i cilindri, in tabella~\ref{tab:dir_parallelepipedi} per i parallelepipedi, \ldots.
+Prima di iniziare a prendere le misure, abbiamo verificato \ldots.
+Abbiamo poi misurato la massa di ogni pesetto con la bilancia di precisione, 
+e le dimensioni utili a calcolare il volume con il calibro ventesimale/cinquantesimale/Palmer, assegnando \ldots come incertezza. I risultati delle misure dirette sono riportati in tabella~\ref{tab:dir_cilindri} per i cilindri, in tabella~\ref{tab:dir_parallelepipedi} per i parallelepipedi, \ldots.
 
 \begin{table}[]
     \centering
@@ -60,12 +61,25 @@ Per i solidi a forma di cilindro abbiamo usato la seguente formula per calcolare
 \begin{equation}
     V_c = \ldots
 \end{equation}
-Assumendo le misure dirette indipendenti, abbiamo calcolato \ldots %l'incertezza sul volume sommando in quadrature gli errori relativi:
+Dal momento che le misure dirette delle lunghezze sono indipendenti, abbiamo calcolato l'incertezza come \ldots:
 \begin{equation}
     \sigma_{V_c} = \ldots
 \end{equation}
 
 Per i solidi a forma di \ldots
+
+In tabella~\ref{tab:m_V} sono riportate le masse e i volumi di tutti i solidi.
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{c|c|c}
+      solido   & massa (g)  & volume ($mm^3$)\\
+      \hline
+       \ldots & $\ldots \pm \ldots$ & $\ldots \pm \ldots$\\
+    \end{tabular}
+    \caption{Misure di massa e volume per tutti i pesetti.}
+    \label{tab:m_V}
+\end{table}
 
 \subsection{Fit alla densit\`a}
 
@@ -74,7 +88,7 @@ per individuare i pesetti della stessa densit\`a, ovvero quelli che si dispongon
 
 \begin{figure}
     \centering
-     \includegraphics[width=0.5\linewidth]{blankfig.eps}
+     \includegraphics[width=0.5\linewidth]{blankfig.pdf}
     \caption{Grafico di dispersione $(m,V)$.}
     \label{fig:dispersione}
 \end{figure}
@@ -91,7 +105,7 @@ da cui si ricava la densit\`a $\rho$ e la sua incertezza:
     \sigma_{\rho} = \ldots
 \end{equation}
 
-In figura~\ref{fig:density1} \`e riportato il  fit per il primo gruppo di pesetti, i valori di best fit risultano:
+In figura~\ref{fig:densita1} \`e riportato il  fit per il primo gruppo di pesetti, i valori di best fit risultano:
 \begin{eqnarray}
     \alpha_1 = (\ldots \pm \ldots)\ \rm [unita'\ di\ misura] \\
     \beta_1 = (\ldots \pm \ldots)\ \rm [unita'\ di\ misura]
@@ -102,13 +116,14 @@ La densit\`a risulta quindi pari a $\rho = (\ldots\pm\ldots)\ \rm [unita'\ di\ m
     \centering
      \includegraphics[width=0.5\linewidth]{blankfig.pdf}
     \caption{Grafico di dispersione $(m,V)$, best fit per il primo gruppo di pesetti e grafico dei residui.}
-    \label{fig:density1}
+    \label{fig:densita1}
 \end{figure}
 
 In figura \ldots  \`e riportato il secondo fit, i valori di best fit risultano \ldots
 
 \subsection{Verifica della Legge di Potenze per le sfere}
 
+\ldots
 
 \section{Conclusioni}
 In questa esperienza abbiamo misurato la densit\`a di alcuni oggetti attraverso misure dirette della massa e delle dimensioni degli oggetti. Le densit\`a misurate risultano compatibili/incompatibili con i valori tabulati.
