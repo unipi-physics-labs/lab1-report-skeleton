@@ -18,6 +18,7 @@ In questa esperienza abbiamo misurato la densit\`a di alcuni oggetti attraverso 
 La densit\`a \`e definita come \ldots.
 
 \section{Materiali e Strumenti di Misura}
+%\section{Apparato Strumentale} %da utilizzare quando l'apparato è più complesso
 L'esperienza consiste nella misura di masse e volumi di un certo numero di solidi di diverse forme: cilindri, parallelepipedi, sfere e prismi a base esagonale. Per le misure dirette ci siamo serviti di:
 \begin{itemize}
     \item calibro ventesimale, risoluzione di \ldots;
@@ -93,7 +94,10 @@ per individuare i pesetti della stessa densit\`a, ovvero quelli che si dispongon
     \label{fig:dispersione}
 \end{figure}
 
-Abbiamo poi formato \ldots gruppi di pesetti, e per ogni gruppo abbiamo costruito il grafico di dispersione con le masse sulle ascisse e i volumi sulle ordinate ed effettuato il fit dei minimi quadrati con la funzione:
+Abbiamo poi formato \ldots gruppi di pesetti, e per ogni gruppo abbiamo costruito il grafico di
+dispersione con le masse sulle ascisse e i volumi sulle ordinate ed effettuato il fit dei minimi
+quadrati usando la funzione \verb|curve_fit| della libreria \verb|scipy.optimize| di 
+\verb|Python|. Abbiamo utilizzato la funzione:
 \begin{equation}
     y = \alpha x + \beta
 \end{equation}
