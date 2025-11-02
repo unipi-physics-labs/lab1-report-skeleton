@@ -62,7 +62,7 @@ come spiegato nella sezione~\ref{sec:calcoloV}, e poi abbiamo estratto i valori 
 come descritto nella sezione~\ref{sec:fit}.
 
 \subsection{Calcolo dei Volumi}\label{sec:calcoloV}
-Per i solidi a forma di cilindro abbiamo usato la seguente formula per calcolare il volume a partire dalle misure dirette riportate in tabella~\ref{tab:dir_cilindri}.
+Per i solidi a forma di parallelepipedo abbiamo usato la seguente formula per calcolare il volume a partire dalle misure dirette riportate in tabella~\ref{tab:dir_cilindri}.
 \begin{equation}
     V_c = \ldots
 \end{equation}
@@ -101,9 +101,9 @@ per individuare i pesetti della stessa densit\`a, ovvero quelli che si dispongon
 Abbiamo poi formato \ldots gruppi di pesetti, e per ogni gruppo abbiamo costruito il grafico di
 dispersione con le masse sulle ascisse e i volumi sulle ordinate ed effettuato il fit dei minimi
 quadrati usando la funzione \verb|curve_fit| della libreria \verb|scipy.optimize| di 
-\verb|Python|. Abbiamo utilizzato la funzione:
+\verb|Python|. Considerando che la teoria prevede una dipendenza lineare tra massa e volume, abbiamo utilizzato come modello la funzione:
 \begin{equation}
-    y = \alpha x + \beta
+    f(x) = \alpha x + \beta
 \end{equation}
 da cui si ricava la densit\`a $\rho$ e la sua incertezza:
 \begin{equation}
